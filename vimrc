@@ -154,3 +154,6 @@ set diffopt+=vertical
 if filereadable($HOME . "/.vimrc.local")
   source ~/.vimrc.local
 endif
+
+" File tree browser - backslash
+map \ :NERDTreeToggle<CR>
