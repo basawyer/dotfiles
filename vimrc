@@ -158,3 +158,13 @@ endif
 
 " File tree browser - backslash
 map \ :NERDTreeToggle<CR>
+
+" Strip Trailing Whitespace for code files on save
+function! StripTrailingWhitespace()
+  let save_cursor = getpos(".")
+  %s/\s\+$//e
+  call setpos('.', save_cursor)
+endfunction
+
+" Ruby, Rails
+autocmd BufWritePre *.rb,*.yml,*.js,*.css,*.less,*.sass,*.scss,*.html,*.xml,*.erb,*.haml,*.feature call StripTrailingWhitespace()
