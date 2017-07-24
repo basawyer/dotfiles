@@ -61,7 +61,6 @@ Plug 'vim-ruby/vim-ruby'
 Plug 'vim-scripts/Gundo'
 Plug 'vim-scripts/tComment'
 Plug 'vim-scripts/regreplop.vim'
-Plug 'w0rp/ale'
 
 if filereadable(expand("~/.vimrc.bundles.local"))
   source ~/.vimrc.bundles.local
