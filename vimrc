@@ -160,6 +160,7 @@ endif
 
 " File tree browser - backslash
 map \ :NERDTreeToggle<CR>
+map \| :NERDTreeFind<CR>
 
 " Strip Trailing Whitespace for code files on save
 function! StripTrailingWhitespace()
