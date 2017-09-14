@@ -39,6 +39,10 @@ _load_settings() {
 }
 _load_settings "$HOME/.zsh/configs"
 
+# Make Ctrl-P and Ctrl-N be up and down
+bindkey "^P" up-line-or-search
+bindkey "^N" down-line-or-search
+
 # Local config
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
 
