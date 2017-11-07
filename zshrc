@@ -43,6 +43,9 @@ _load_settings "$HOME/.zsh/configs"
 bindkey "^P" up-line-or-search
 bindkey "^N" down-line-or-search
 
+# FZF
+[[ -f ~/.fzf.zsh ]] && source ~/.fzf.zsh
+
 # Local config
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
 
